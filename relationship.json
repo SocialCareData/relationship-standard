@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "title": "Relationship Data Standard (Identification)",
+    "version": "0.1",
+    "status": "draft",
+    "effectiveDate": "2026-02-17",
+    "description": "Standardised data fields for describing a relationship between two persons or a person and a professional"
+  },
+  "entities": [
+    {
+      "name": "Relationship",
+      "description": "Attached to a link between entities, this is an object that describes the nature of that link",
+      "fields": [
+        {
+          "name": "type",
+          "type": "Code",
+          "cardinality": "1..*",
+          "description": "Code for the kind of the relationship",
+          "vocabulary": {
+            "name": "RelationshipCode",
+            "url": "/#"
+          }
+        },
+        {
+          "name": "status",
+          "type": "Code",
+          "cardinality": "0..1",
+          "description": "Code for the relationship's status",
+          "vocabulary": {
+            "name": "StatusCode",
+            "url": "/#"
+          }
+        },
+        {
+          "name": "Risk",
+          "type": "Code",
+          "cardinality": "0..*",
+          "description": "Code for the risk level of the event (?).",
+          "vocabulary": {
+            "name": "RiskCode",
+            "url": "/#"
+          }
+        }
+      ]
+    }
+  ]
+}
