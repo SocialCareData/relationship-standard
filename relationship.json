@@ -8,8 +8,8 @@
   },
   "entities": [
     {
-      "name": "Relationship",
-      "description": "Attached to a link between entities, this is an object that describes the nature of that link",
+      "name": "PersonRelationship",
+      "description": "Attached to a link between two Person objects, this is an object that describes the relationship the latter has to the former.",
       "fields": [
         {
           "name": "type",
@@ -17,7 +17,7 @@
           "cardinality": "1..*",
           "description": "Code for the kind of the relationship",
           "vocabulary": {
-            "name": "RelationshipCode",
+            "name": "PersonRelationshipCode",
             "url": "#"
           }
         },
@@ -32,10 +32,82 @@
           }
         },
         {
+          "name": "risk",
+          "type": "Code",
+          "cardinality": "0..*",
+          "description": "Code for the risk level of the relationship.",
+          "vocabulary": {
+            "name": "RiskCode",
+            "url": "#"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Professional Relationship",
+      "description": "Attached to a link from a Person to a Professional, this is an object that describes the relationship that the latter has to the former",
+      "fields": [
+        {
+          "name": "type",
+          "type": "Code",
+          "cardinality": "1..*",
+          "description": "Code for the kind of the relationship",
+          "vocabulary": {
+            "name": "ProfessionalRelationshipCode",
+            "url": "#"
+          }
+        },
+        {
+          "name": "status",
+          "type": "Code",
+          "cardinality": "0..1",
+          "description": "Code for the relationship's status",
+          "vocabulary": {
+            "name": "StatusCode",
+            "url": "#"
+          }
+        },
+        {
+          "name": "risk",
+          "type": "Code",
+          "cardinality": "0..*",
+          "description": "Code for the risk level of the relationship.",
+          "vocabulary": {
+            "name": "RiskCode",
+            "url": "#"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Involvement",
+      "description": "Attached to a link between an Event or Episode and a Professional, this is an object that describes the invovlement of the professional",
+      "fields": [
+        {
+          "name": "type",
+          "type": "Code",
+          "cardinality": "1..*",
+          "description": "Code for the kind of the involvement",
+          "vocabulary": {
+            "name": "InvolvementCode",
+            "url": "#"
+          }
+        },
+        {
+          "name": "status",
+          "type": "Code",
+          "cardinality": "0..1",
+          "description": "Code for the involvement's status (ie. active / inactive)",
+          "vocabulary": {
+            "name": "StatusCode",
+            "url": "#"
+          }
+        },
+        {
           "name": "Risk",
           "type": "Code",
           "cardinality": "0..*",
-          "description": "Code for the risk level of the event (?).",
+          "description": "Code for the risk level of the involvement.",
           "vocabulary": {
             "name": "RiskCode",
             "url": "#"
