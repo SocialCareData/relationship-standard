@@ -18,7 +18,7 @@
           "description": "Code for the kind of the relationship",
           "vocabulary": {
             "name": "RelationshipCode",
-            "url": "/#"
+            "url": "#"
           }
         },
         {
@@ -28,7 +28,7 @@
           "description": "Code for the relationship's status",
           "vocabulary": {
             "name": "StatusCode",
-            "url": "/#"
+            "url": "#"
           }
         },
         {
@@ -38,7 +38,7 @@
           "description": "Code for the risk level of the event (?).",
           "vocabulary": {
             "name": "RiskCode",
-            "url": "/#"
+            "url": "#"
           }
         }
       ]
