@@ -1,9 +1,9 @@
-# relationship-standard
-(Extremely) minimal amount of information that can be used to describe a relationship (person-to-person or person-to-practitioner)
-CLICK `SPECIFICATION` BUTTON
+# Relationship Predicate
 
-[contextual narrative goes here]
-[then technical narrative -- this is how relationships are described and how they fit into the data model]
+## Status
 
-open questions: 
-- 
+Version 0.1
+
+Effective Date: 2026-02-20
+
+To build a full picture of a person's life (and, consequently, plan their safeguarding accordingly), a social worker needs to understand how they are linked to other people, professionals, service episodes, and life events that have been recorded. Each link comes with a predicate according to the specifications here. 
