@@ -37,8 +37,8 @@
           "cardinality": "0..1",
           "description": "Code for the relationship's status",
           "vocabulary": {
-            "name": "StatusCode",
-            "url": "#"
+            "name": "ActiveCode",
+            "url": "/spec/controlled-vocabularies/?tab=specification#activecode"
           }
         }
       ]
