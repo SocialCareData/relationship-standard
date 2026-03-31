@@ -38,7 +38,7 @@
           "description": "Code for the relationship's status",
           "vocabulary": {
             "name": "StatusCode",
-            "url": "#"
+            "url": "https://socialcaredata.github.io/todo.html"
           }
         }
       ]
