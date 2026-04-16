@@ -18,44 +18,24 @@
           "description": "Code for the kind of the relationship",
           "vocabulary": {
             "name": "PersonRelationshipCode",
-            "url": "#"
+            "url": "https://terminology.hl7.org/6.5.0/ValueSet-v3-PersonalRelationshipRoleType.html"
+          }
+        },
+        {
+          "name": "role",
+          "type": "Code",
+          "cardinality": "0..*",
+          "description": "Optional code for a legal role like guardian or power of attorney",
+          "vocabulary": {
+            "name": "PersonRoleCode",
+            "url": "https://build.fhir.org/valueset-relatedperson-relationshiptype.html"
           }
         },
         {
           "name": "status",
-          "type": "Code",
+          "type": "Boolean",
           "cardinality": "0..1",
-          "description": "Code for the relationship's status",
-          "vocabulary": {
-            "name": "StatusCode",
-            "url": "#"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Involvement",
-      "description": "Attached to a link between an Event or Episode and a Professional, this is an object that describes the invovlement of the professional",
-      "fields": [
-        {
-          "name": "type",
-          "type": "Code",
-          "cardinality": "1..*",
-          "description": "Code for the kind of the involvement",
-          "vocabulary": {
-            "name": "InvolvementCode",
-            "url": "#"
-          }
-        },
-        {
-          "name": "status",
-          "type": "Code",
-          "cardinality": "0..1",
-          "description": "Code for the involvement's status (ie. active / inactive)",
-          "vocabulary": {
-            "name": "StatusCode",
-            "url": "#"
-          }
+          "description": "Code for the relationship's status"
         }
       ]
     }
