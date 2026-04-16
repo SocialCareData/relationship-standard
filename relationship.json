@@ -33,13 +33,9 @@
         },
         {
           "name": "status",
-          "type": "Code",
+          "type": "Boolean",
           "cardinality": "0..1",
-          "description": "Code for the relationship's status",
-          "vocabulary": {
-            "name": "ActiveCode",
-            "url": "/spec/controlled-vocabularies/?tab=specification#activecode"
-          }
+          "description": "Code for the relationship's status"
         }
       ]
     }
